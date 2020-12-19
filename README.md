@@ -49,7 +49,7 @@ sudo cp 60-openocd.rules /etc/udev/rules.d/
 ```
 ## rt232r.cfg
 
-Create a file, name it as rt232.cfg with the following to lines
+Create a file, name it as rt232.cfg with the following lines
 ```
 adapter driver ft232r
 adapter speed 3000
@@ -61,7 +61,7 @@ ft232r_vid_pid 0x0403 0x06001
 2. Find Pin -> GPIO bit bang mapping on page 3  
 [Bit Bang Mode Availability for the FT232R and FT245R](https://www.ftdichip.com/Support/Documents/AppNotes/AN_232R-01_Bit_Bang_Mode_Available_For_FT232R_and_Ft245R.pdf)  
 
-Add the following line s to rt232.cfg  
+Add the following lines to rt232.cfg file  
 
 ```
 #Set TCK GPIO number. If not specified, default 0 or TXD is used.
