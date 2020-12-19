@@ -1,5 +1,6 @@
 
-# XK2C95XL-openocd-porgrammer
+# XK2C95XL OpenOCD SVF Programmer(player)
+
 ![Figure 1-1](xk2c95xl.jpg "Figure 1-1")  
 Instructions to use openocd as 'pldKit XK2C95XL XILINX CPLD Kit' programmer (FT232R)
 
