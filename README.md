@@ -66,3 +66,12 @@ ft232r_tdi_num 5
 ft232r_tdo_num 6
 ```
 
+## Test OpenOCD
+
+```
+cd~
+lsusb (Make sure you have "Bus 002 Device 005: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC")
+openocd -f ft232.cfg
+telnet localhost 4444
+svf demo.svf progress [ignore_error]
+```
