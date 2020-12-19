@@ -1,6 +1,14 @@
 
 # XK2C95XL-openocd-porgrammer
+![Figure 1-1](xk2c95xl.jpg "Figure 1-1")  
 Instructions to use openocd as 'pldKit XK2C95XL XILINX CPLD Kit' programmer (FT232R)
+
+A tiny board with FT232RL bit bang JTAG and 4 choices of generated clock.
+
+The 'recommended' method to program this little board is to use a VB 6.0 program, can only run on 32 bit Windows, it's EXTREMELY slow, and it keeps crashing my Windows.
+
+By the time you realized this, you probably will go to ebay buy a board with real JTAG interface. I did. While waiting for it to arrive, I decided to do something
+with this board, I dont just want trash it yet.
 
 [XK2C95XL XILINX CPLD Kit](http://pldkit.com/xk2c95xl)
 
