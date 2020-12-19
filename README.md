@@ -30,7 +30,8 @@ Ubuntu 20.04 running in a Virtual Machine, or any other Linux.
 ```
 sudo apt update
 sudo apt upgrade
-sudo apt-get install libtool pkg-config texinfo libusb-dev libusb-1.0.0-dev libftdi-dev autoconf make git
+sudo apt-get install make git
+sudo apt-get install libtool pkg-config texinfo libusb-dev libusb-1.0.0-dev libftdi-dev autoconf 
 ```
 ### Clone code, enable ft232r support, build and install it
 
