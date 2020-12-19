@@ -89,6 +89,8 @@ openocd -f ft232.cfg
 telnet localhost 4444
 svf demo.svf progress [ignore_error]
 ```
+The console should look like this
+![Figure 1-2](openocd.jpg "Figure 1-2") 
 
 The actually playing back of svf lines will be dumped to the telnet console. Depends how big is your svf file, it could take quite few minutes to complete.
 
