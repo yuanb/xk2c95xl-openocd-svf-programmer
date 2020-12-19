@@ -32,3 +32,37 @@ sudo make install
 cd contrib
 sudo cp 60-openocd.rules /etc/udev/rules.d/
 ```
+## rt232r.cfg
+
+Create a file, name it as rt232.cfg with the following to lines
+```
+adapter driver ft232r
+adapter speed 3000
+ft232r_vid_pid 0x0403 0x06001
+```
+### Configuraion for pldKit board
+
+1. Find JTAG -> Pin name, # mapping from XK2C95XL_A_schematics.pdf 
+2. Find Pin -> GPIO bit bang mapping on page 3
+[Bit Bang Mode Availability for the FT232R and FT245R](https://www.ftdichip.com/Support/Documents/AppNotes/AN_232R-01_Bit_Bang_Mode_Available_For_FT232R_and_Ft245R.pdf)
+
+Add the following line s to rt232.cfg
+
+```
+#Set TCK GPIO number. If not specified, default 0 or TXD is used.
+#RI#, Pin6, GPIO D7
+ft232r_tck_num 7
+
+#Set TMS GPIO number. If not specified, default 3 or CTS is used.
+#RXD, Pin5, GPIO D1
+ft232r_tms_num 1
+
+#Set TDI GPIO number. If not specified, default 1 or RXD is used.
+#DSR#, Pin9, GPIO D5
+ft232r_tdi_num 5
+
+#Set TDO GPIO number. If not specified, default 2 or RTS is used.
+#DCD#, Pin10, GPIO D6
+ft232r_tdo_num 6
+```
+
