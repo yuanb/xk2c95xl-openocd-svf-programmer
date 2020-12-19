@@ -8,7 +8,7 @@ A tiny board with FT232RL bit bang JTAG and 4 choices of generated clock.
 
 The 'recommended' method to program this little board is to use a VB 6.0 program, can only run on 32 bit Windows, it's EXTREMELY slow, and it keeps crashing my Windows. Barely I can do anything with it and the board!  
 
-There are the links of the VB6 implementation of SVF player.  
+There are the links of the VB6 implementation of SVF player. You can still download the program and source code.
 [Openschemes FT232 JTAG SVF Player V1.0](https://openschemes.com/2013/06/22/openschemes-ft232-jtag-svf-player-v1-0/)  
 
 [Bit Bang JTAG Programming of Xilinx CPLD using FT232 – Homebrew SVF Player](http://openschemes.com/2011/10/25/bit-bang-jtag-programming-of-xilinx-cpld-using-ft232-homebrew-svf-player/)  
