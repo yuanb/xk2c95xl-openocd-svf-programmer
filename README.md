@@ -1,5 +1,7 @@
 
 # XK2C95XL OpenOCD SVF Programmer(player)
+A cute little xc9572xl CPLD breakout board with FT232RL bitbang jtag interface.
+
 
 ![Figure 1-1](xk2c95xl.jpg "Figure 1-1")  
 Instructions to use openocd as 'pldKit XK2C95XL XILINX CPLD Kit' programmer (FT232R)
