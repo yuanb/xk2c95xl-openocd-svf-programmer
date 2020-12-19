@@ -57,6 +57,8 @@ ft232r_vid_pid 0x0403 0x06001
 ```
 ### Configuraion for pldKit board
 
+![Figure 1-2](jtag-connection.jpg "Figure 1-2")  
+
 1. Find JTAG -> Pin name, # mapping from XK2C95XL_A_schematics.pdf  
 2. Find Pin -> GPIO bit bang mapping on page 3  
 [Bit Bang Mode Availability for the FT232R and FT245R](https://www.ftdichip.com/Support/Documents/AppNotes/AN_232R-01_Bit_Bang_Mode_Available_For_FT232R_and_Ft245R.pdf)  
@@ -89,7 +91,7 @@ lsusb ("Bus 002 Device 005: ID 0403:6001 Future Technology Devices International
 openocd -f ft232.cfg
 ```
 The console should look like this
-![Figure 1-2](openocd.jpg "Figure 1-2") 
+![Figure 1-3](openocd.jpg "Figure 1-3") 
 
 From another bash tab  
 ```
