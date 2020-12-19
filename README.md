@@ -5,15 +5,20 @@ Instructions to use openocd as 'pldKit XK2C95XL XILINX CPLD Kit' programmer (FT2
 
 A tiny board with FT232RL bit bang JTAG and 4 choices of generated clock.
 
-The 'recommended' method to program this little board is to use a VB 6.0 program, can only run on 32 bit Windows, it's EXTREMELY slow, and it keeps crashing my Windows.
+The 'recommended' method to program this little board is to use a VB 6.0 program, can only run on 32 bit Windows, it's EXTREMELY slow, and it keeps crashing my Windows. Barely I can do anything with it and the board!
 
-By the time you realized this, you probably will go to ebay buy a board with real JTAG interface. I did. While waiting for it to arrive, I decided to do something
-with this board, I dont just want trash it yet.
+There are the links of the VB6 implementation of SVF player.
+[Openschemes FT232 JTAG SVF Player V1.0](https://openschemes.com/2013/06/22/openschemes-ft232-jtag-svf-player-v1-0/)  
+
+[Bit Bang JTAG Programming of Xilinx CPLD using FT232 – Homebrew SVF Player](http://openschemes.com/2011/10/25/bit-bang-jtag-programming-of-xilinx-cpld-using-ft232-homebrew-svf-player/)
+
+By the time you realized this is a problem, you probably would go to ebay buy a new board with real JTAG interface. I did. 
+While waiting for it to arrive, I decided to do something with this board, I dont just want trash it yet.
 
 [XK2C95XL XILINX CPLD Kit](http://pldkit.com/xk2c95xl)
 
 ## What you need
-Ubuntu 20.04 running in as a Virtual Machine
+Ubuntu 20.04 running in a Virtual Machine, or any other Linux.
 
 ## Build openocd
 ### Tutorials
@@ -85,3 +90,10 @@ svf demo.svf progress [ignore_error]
 ```
 
 The actually playing back of svf lines will be dumped to the telnet console. Depends how big is your svf file, it could take quite few minutes to complete.
+
+## OpenOCD help
+
+Search for 'ft232r', you will see the commands to config ft232r driver.
+[OpenOCD user manual](http://openocd.org/doc/pdf/openocd.pdf)
+
+## Good luck!
